@@ -1,0 +1,163 @@
+/* =====================
+   NEW - Calculator
+======================== */
+
+body {
+    background-color: rgb(198, 223, 198);
+}
+
+
+/* =====================
+   CONTENEDOR PADRE
+======================== */
+
+.container-radious {
+    background-color: rgb(94, 94, 94);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+}
+
+
+/* =====================
+   PANTALLA
+======================== */
+
+.display-table {
+    justify-content: center;
+    align-items: justify;
+    margin: 0 auto;
+    display: grid;
+    background-color: rgb(231, 240, 241);
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr;
+    row-gap: 0.5em;
+    border-radius: 10px 10px 0px 0px;
+    width: 160px;
+    min-width: 120px;
+    max-width: 200px;
+}
+
+.display-table input {
+    background-color: rgb(231, 240, 241);
+    margin: 0 auto;
+    width: 156px;
+    height: 70px;
+    border: 0px;
+}
+
+.window-toggle {
+    height: 10px;
+    max-height: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 5fr 1fr;
+    column-gap: .3em;
+    padding-top: 5px;
+    padding-left: 7px;
+}
+
+
+/* =====================
+   BOTONES
+======================== */
+
+.buttoms-table {
+    justify-content: center;
+    align-items: justify;
+    margin: 0 auto;
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: .5em;
+    width: 160px;
+    min-width: 120px;
+    max-width: 200px;
+    padding: 5px 0px 10px 0px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+/*--- Filas y sus elementos ----- */
+
+.first-line-buttons {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+    column-gap: 0.5em;
+}
+
+.second-line-buttons {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+    column-gap: 0.5em;
+}
+
+.third-line-buttons {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+    column-gap: 0.5em;
+}
+
+.forth-line-buttons {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+    column-gap: 0.5em;
+}
+
+.last-line-buttons {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+    column-gap: 0.5em;
+}
+
+
+/* =====================
+   UTILIDADES y objetos
+======================== */
+
+.empty {
+    width: 30px;
+    height: 30px;
+}
+
+div .btn {
+    border-radius: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    width: 30px;
+    height: 30px;
+    border: 0px;
+    background-color: rgb(231, 240, 241);
+}
+
+.btn:hover {
+    background-color: rgb(1, 98, 184);
+}
+
+.mini-btn {
+    border-radius: 20px;
+    font-size: 2px;
+    height: 7px;
+    width: 7px;
+    margin: 0;
+    padding: 0;
+}
+
+#mini-btn-red {
+    background-color: rgb(189, 21, 21);
+}
+
+#mini-btn-yellow {
+    background-color: rgb(201, 182, 15);
+}
+
+#mini-btn-green {
+    background-color: rgb(12, 104, 4);
+}

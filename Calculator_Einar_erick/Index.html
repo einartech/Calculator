@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Calculator</title>
+
+    <script>
+        var cifra = "";
+        var acumulacion = 0;
+        var sumar = false;
+
+        function display_numeros(numero) {
+
+            document.getElementById("display").value = cifra + numero;
+
+            cifra = document.getElementById("display").value;
+
+        };
+
+        function suma() {
+
+            acumulacion = acumulacion + parseInt(cifra);
+
+            document.getElementById("display").value = acumulacion;
+
+            cifra = "";
+
+            sumar = true;
+        }
+
+        function resultado() {
+
+            if (sumar) {
+
+                document.getElementById("display").value = acumulacion + parseInt(cifra);
+
+            }
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <h1>CALCULATOR 3000</h1>
+    <div class="container-radious">
+        <!-- SCREEN TABLE GRID-->
+        <div class="display-table">
+            <div class="window-toggle">
+                <button id="mini-btn-red" class="mini-btn">X</button>
+                <button id="mini-btn-yellow" class="mini-btn">-</button>
+                <button id="mini-btn-green" class="mini-btn">M</button>
+                <div class="empty"></div>
+                <div class="toggle"></div>
+            </div>
+            <div id="screen-display" class="screen-display-class">
+                <input name="display" type="text" id="display" class="display"></input>
+            </div>
+        </div>
+        <!-- NUMBERS TABLE GRID-->
+        <div class="buttoms-table">
+            <div class="first-line-buttons">
+                <button id="clear" class="operatorClass btn">C</button>
+                <button id="plus-minus" class="operatorClass btn">+-</button>
+                <button id="percent" class="operatorClass btn">%</button>
+                <button id="divided" class="operatorClass btn">/</button>
+            </div>
+            <div class="second-line-buttons">
+                <button id="seven" class="number btn" onClick="display_numeros(7)">7</button>
+                <button id="eight" class="number btn" onClick="display_numeros(8)">8</button>
+                <button id="nine" class="number btn" onClick="display_numeros(9)">9</button>
+                <button id="multiply" class="operatorClass btn">*</button>
+            </div>
+            <div class="third-line-buttons">
+                <button id="four" class="number btn" onClick="display_numeros(4)">4</button>
+                <button id="five" class="number btn" onClick="display_numeros(5)">5</button>
+                <button id="six" class="number btn" onClick="display_numeros(6)">6</button>
+                <button id="less " class="operatorClass btn">-</button>
+            </div>
+            <div class="forth-line-buttons">
+                <button id="one" class="number btn" onClick="display_numeros(1)">1</button>
+                <button id="two" class="number btn" onClick="display_numeros(2)">2</button>
+                <button id="three" class="number btn" onClick="display_numeros(3)">3</button>
+                <button id="plus" class="operatorClass btn" ">+</button>
+            </div>
+            <div class="last-line-buttons ">
+                <button id="zero " class="number btn " onClick="display_numeros(0) ">0</button>
+                <button id="dot " class="operatorClass btn ">.</button>
+                <div class="empty "></div>
+                <button id="equal " class="operatorClass btn ">=</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        cifra = document.getElementById("display ").value = 0;
+    </script>
+</body>
+
+</html>
